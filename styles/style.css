@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --amarelo: #FAC21C;
+    --branco: white;
+    --verde: darkgreen;
+}
+*{
+    margin: 10%, 30%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: auto;
+    box-sizing: border-box;
+    background-image: url(../assets/background.png);
+    color: var(--amarelo)
+}
+
+strong {
+    color: var(--branco);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4%;
+    gap: 5rem;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:var(--amarelo);
+    text-decoration: none;
+}
+
+.apresentacao__conteudo{
+    height: auto;
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.photo {
+    width: 50%;
+    align-items: center;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.apresentacao__conteudo__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+   
+}
+
+.apresentacao__conteudo_link_link{
+    /* background-color: #FAC21C; */
+    display: flex;
+    /* flex-direction: center; */
+    justify-content: center;
+    gap: 16px;
+    width: 360px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    border: 2px dashed var(--amarelo);
+    border-radius: 6px;
+    padding-top: 21px, 0;
+    padding-bottom: 21px, 0;
+    text-decoration: none;
+    color: var(--branco)
+   
+}
+.apresentacao__conteudo_link_link:hover{
+    background-color: var(--verde);
+}
+
+.apresentacao__conteudo_link_titulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+
+.rodape {
+    padding: 8px;
+    color:#f6f6f6;
+    background-color: var(--amarelo);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+
+    .cabecalho{
+        padding: 13%
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+    flex-direction: column-reverse;
+}
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+
+
+}
