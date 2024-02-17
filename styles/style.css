@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root{
-    --amarelo: #FAC21C;
+    --amarelo: #080808;
     --branco: white;
-    --verde: darkgreen;
+    --verde: rgb(52, 10, 121);
 }
 *{
     margin: 10%, 30%;
@@ -13,8 +13,8 @@
 body {
     height: auto;
     box-sizing: border-box;
-    background-image: url(../assets/background.png);
-    color: var(--amarelo)
+    background: #080808;
+    color: var(--verde)
 }
 
 strong {
@@ -43,7 +43,7 @@ strong {
     font-family: 'Montserrat' sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
-    color:var(--amarelo);
+    color:var(--verde);
     text-decoration: none;
 }
 
